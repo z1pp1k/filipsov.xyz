@@ -37,9 +37,11 @@ export default function Page() {
             </span>
           </div>
           <p className="animate-in mt-10 text-black dark:text-white">
-            Vítejte na mé osobní webové stránce. Zajímám se o vývoj webových
-            stránek již dlouhou dobu, a na této stránce můžete najít několik
-            informací o mně.
+            Vítejte na mé osobní webové stránce, mým hlavním zájmem je tvorba
+            webů spojená s grafickým designem a strategiemi pro sociální sítě,
+            snažím se neustále zdokonalovat a sledovat aktuální trendy v
+            digitálním světě, abych mohl efektivně přinášet inovace do svého
+            oboru. Těším se na případné možnosti spolupráce.
           </p>
 
           <div className="animate-in mt-10 flex flex-col gap-2 text-zinc-500 hover:text-zinc-300 sm:flex-row sm:gap-4 dark:hover:text-zinc-700">
