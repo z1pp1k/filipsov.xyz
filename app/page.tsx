@@ -12,13 +12,13 @@ export default function Page() {
       <div className="mx-auto max-w-screen-md">
         <Navbar></Navbar>
         <header className="mt-12 px-6">
-          <h1 className="text-4xl font-bold text-black dark:text-white">
+          <h1 className="mb-1 text-4xl font-bold text-black dark:text-white">
             Filip Sovadina
           </h1>
           <p className="text-zinc-500 dark:text-zinc-500">
             Tvorba webových stránek, design a správa sociálních médií.
           </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-6 rounded-lg bg-zinc-100 p-4 shadow-md sm:flex-row sm:items-start sm:justify-start sm:p-8 dark:bg-zinc-900">
+          <div className="mt-6 flex flex-col items-center justify-center gap-6 rounded-lg bg-zinc-100 p-4 shadow-md sm:flex-row sm:p-8 dark:bg-zinc-900">
             <Image
               className="rounded-full border border-black/30 dark:border-white/30"
               src="/logo2.png"
@@ -26,16 +26,15 @@ export default function Page() {
               height={120}
               alt="iPhone memoji"
             />
-            <span className="text-md text-left font-light text-zinc-800 sm:text-left dark:text-zinc-200">
-              Filip Sovadina
-              <br />
-              Podroužkova 1676/61, 70800 Ostrava - Poruba
-              <br />
-              IČ: 21154686
-              <br />
-              Fyzická osoba zapsaná v Živnostenském rejstříku v Ostravě od
-              22.1.2024
-            </span>
+            <div className="text-md flex flex-col gap-1 text-left font-light text-zinc-800 sm:text-left dark:text-zinc-200">
+              <span className="font-semibold">Filip Sovadina</span>
+              <span>Podroužkova 1676/61, 70800 Ostrava - Poruba</span>
+              <span className="font-semibold">IČ: 21154686</span>
+              <span className="text-sm">
+                Fyzická osoba zapsaná v Živnostenském rejstříku v Ostravě od
+                22.1.2024
+              </span>
+            </div>
           </div>
           <p className="mt-10 text-black dark:text-white">
             Vítejte na mé osobní webové stránce, mým hlavním zájmem je tvorba
@@ -70,7 +69,7 @@ export default function Page() {
           </div>
 
           <div className="my-10 rounded-lg bg-zinc-100 p-4 shadow-md sm:p-8 dark:bg-zinc-900">
-            <h1 className="text-4xl font-bold text-black dark:text-white">
+            <h1 className="mb-1 text-4xl font-bold text-black dark:text-white">
               Máte zájem o mé služby?
             </h1>
             <p className="text-zinc-500 dark:text-zinc-500">
