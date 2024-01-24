@@ -25,7 +25,7 @@ export default function Page() {
               height={90}
               alt="iPhone memoji"
             />
-            <span className="text-sm">
+            <span className="text-sm dark:text-white">
               Filip Sovadina
               <br />
               Podroužkova 1676/61, 70800 Ostrava - Poruba
