@@ -5,19 +5,20 @@ import { Discord } from './components/Discord'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { BsDiscord, BsSpotify, BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
+import { Contact } from './components/Contact'
 export default function Page() {
   return (
     <main className="min-h-screen">
       <div className="mx-auto max-w-screen-md">
         <Navbar></Navbar>
         <header className="mt-12 px-6">
-          <h1 className="animate-in text-4xl font-bold text-black dark:text-white">
+          <h1 className="text-4xl font-bold text-black dark:text-white">
             Filip Sovadina
           </h1>
-          <p className="animate-in text-zinc-500 dark:text-zinc-500">
+          <p className="text-zinc-500 dark:text-zinc-500">
             Tvorba webových stránek, design a správa sociálních médií.
           </p>
-          <div className="animate-in mt-6 flex flex-col items-start justify-center gap-4 sm:flex-row sm:items-center sm:justify-start">
+          <div className="mt-6 flex flex-col items-start justify-center gap-4 sm:flex-row sm:items-center sm:justify-start">
             <Image
               className="rounded-full border"
               src="/logo2.png"
@@ -36,7 +37,7 @@ export default function Page() {
               22.1.2024
             </span>
           </div>
-          <p className="animate-in mt-10 text-black dark:text-white">
+          <p className="mt-10 text-black dark:text-white">
             Vítejte na mé osobní webové stránce, mým hlavním zájmem je tvorba
             webů spojená s grafickým designem a strategiemi pro sociální sítě,
             snažím se neustále zdokonalovat a sledovat aktuální trendy v
@@ -44,7 +45,7 @@ export default function Page() {
             oboru. Těším se na případné možnosti spolupráce.
           </p>
 
-          <div className="animate-in mt-10 flex flex-col gap-2 text-zinc-500 hover:text-zinc-300 sm:flex-row sm:gap-4 dark:hover:text-zinc-700">
+          <div className="mt-10 flex flex-col gap-2 text-zinc-500 hover:text-zinc-300 sm:flex-row sm:gap-4 dark:hover:text-zinc-700">
             <Link
               className="flex items-center gap-2 transition-all duration-300 hover:text-zinc-500"
               href="mailto:sovadinafilip@icloud.com"
@@ -66,6 +67,16 @@ export default function Page() {
               <FiArrowUpRight size={25}></FiArrowUpRight>
               <span>Ostatní odkazy</span>
             </Link>
+          </div>
+
+          <div className="mt-10">
+            <h1 className="text-4xl font-bold text-black dark:text-white">
+              Máte zájem o mé služby?
+            </h1>
+            <p className="text-zinc-500 dark:text-zinc-500">
+              Vyplňte formulář níže
+            </p>
+            <Contact></Contact>
           </div>
         </header>
       </div>
