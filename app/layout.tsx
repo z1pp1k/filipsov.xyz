@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 const font = Montserrat({ subsets: ['latin'] })
 
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={font.className}>
       <body className="bg-white dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900">
         {children}
+        <Analytics />
       </body>
     </html>
   )
