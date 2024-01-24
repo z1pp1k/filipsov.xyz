@@ -18,7 +18,7 @@ export default function Page() {
           <p className="text-zinc-500 dark:text-zinc-500">
             Tvorba webových stránek, design a správa sociálních médií.
           </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-6 rounded-lg bg-zinc-100 p-4 shadow-md sm:flex-row sm:items-start sm:justify-start dark:bg-zinc-900">
+          <div className="mt-6 flex flex-col items-center justify-center gap-6 rounded-lg bg-zinc-100 p-4 shadow-md sm:flex-row sm:items-start sm:justify-start sm:p-8 dark:bg-zinc-900">
             <Image
               className="rounded-full border border-black/30 dark:border-white/30"
               src="/logo2.png"
@@ -69,7 +69,7 @@ export default function Page() {
             </Link>
           </div>
 
-          <div className="mt-10">
+          <div className="my-10 rounded-lg bg-zinc-100 p-4 shadow-md sm:p-8 dark:bg-zinc-900">
             <h1 className="text-4xl font-bold text-black dark:text-white">
               Máte zájem o mé služby?
             </h1>
