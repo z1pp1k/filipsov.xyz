@@ -4,28 +4,30 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
-  const form = useRef()
+  const form = useRef(null as HTMLFormElement | null)
   const [isSuccessMessageVisible, setSuccessMessageVisible] = useState(false)
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: any) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_xk63zsb',
-        'template_y2zwsjr',
-        form.current,
-        'a0u2PwWAApIXDzfLb',
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          setSuccessMessageVisible(true)
-        },
-        (error) => {
-          console.log(error.text)
-        },
-      )
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_xk63zsb',
+          'template_y2zwsjr',
+          form.current,
+          'a0u2PwWAApIXDzfLb',
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+            setSuccessMessageVisible(true)
+          },
+          (error) => {
+            console.log(error.text)
+          },
+        )
+    }
   }
 
   return (
