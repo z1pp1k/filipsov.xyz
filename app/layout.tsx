@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={font.className}>
+    <html lang="cs" className={font.className}>
       <body className="bg-white dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900">
         {children}
         <Analytics />
