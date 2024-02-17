@@ -47,7 +47,7 @@ export default function Page() {
           <div className="mt-10 flex flex-col gap-2 text-zinc-500 hover:text-zinc-300 sm:flex-row sm:gap-4 dark:hover:text-zinc-700">
             <Link
               className="flex items-center gap-2 transition-all duration-300 hover:text-zinc-500"
-              href="mailto:sovadinafilip@icloud.com"
+              href="mailto:filipsovadina@gmail.com"
             >
               <MdEmail size={25}></MdEmail>
               <span>E-Mail</span>
