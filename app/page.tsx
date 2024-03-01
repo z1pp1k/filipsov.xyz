@@ -5,7 +5,7 @@ import { Discord } from './components/Discord'
 import { FiArrowUpRight } from 'react-icons/fi'
 import { BsDiscord, BsSpotify, BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
-import { Contact } from './components/Contact'
+import Contact from './components/Contact'
 export default function Page() {
   return (
     <main className="min-h-screen">

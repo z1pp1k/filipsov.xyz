@@ -1,38 +1,27 @@
 'use client'
+import React, { useState } from 'react'
+import { useFormspark } from '@formspark/use-formspark'
 
-import React, { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+const FORMSPARK_FORM_ID = 'bgAAKNuFz'
 
-export const Contact = () => {
-  const form = useRef(null as HTMLFormElement | null)
-  const [isSuccessMessageVisible, setSuccessMessageVisible] = useState(false)
+function Contact() {
+  const [submit, submitting] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  })
 
-  const sendEmail = (e: any) => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const onSubmit = async (e: any) => {
     e.preventDefault()
-
-    if (form.current) {
-      emailjs
-        .sendForm(
-          'service_xk63zsb',
-          'template_y2zwsjr',
-          form.current,
-          'a0u2PwWAApIXDzfLb',
-        )
-        .then(
-          (result) => {
-            console.log(result.text)
-            setSuccessMessageVisible(true)
-          },
-          (error) => {
-            console.log(error.text)
-          },
-        )
-    }
+    await submit({ message, name, email })
+    alert('Zpráva odeslána!')
   }
 
   return (
     <div>
-      <form className="my-10 flex flex-col" ref={form} onSubmit={sendEmail}>
+      <form className="my-10 flex flex-col" onSubmit={onSubmit}>
         <label className="text-lg text-black dark:text-white">
           Jméno a Příjmení
         </label>
@@ -42,6 +31,9 @@ export const Contact = () => {
           name="user_name"
           placeholder="Jméno a Příjmení"
           required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          autoComplete="name"
         />
         <label className="text-lg text-black dark:text-white">E-Mail</label>
         <input
@@ -50,6 +42,9 @@ export const Contact = () => {
           name="user_email"
           placeholder="vaše@e-mailová.adresa"
           required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          autoComplete="email"
         />
         <label className="text-lg text-black dark:text-white">Zpráva</label>
         <textarea
@@ -57,18 +52,20 @@ export const Contact = () => {
           name="message"
           placeholder="Vaše zpráva..."
           required
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
-        <input
+        <button
           className="bg-zinc-400 py-4 text-white transition-all duration-300 ease-out hover:cursor-pointer hover:bg-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-900"
           type="submit"
           value="Odeslat"
-        />
-        {isSuccessMessageVisible && (
-          <p className="mt-1 text-center font-bold text-green-500">
-            Vaše zpráva byla úspěšně odeslána!
-          </p>
-        )}
+          disabled={submitting}
+        >
+          Odeslat
+        </button>
       </form>
     </div>
   )
 }
+
+export default Contact
