@@ -23,6 +23,16 @@ export default function Page() {
           </p>
         </header>
         <Links></Links>
+
+        <div className="text-md flex flex-col gap-1 text-center font-light text-zinc-800 dark:text-zinc-200">
+          <span className="font-semibold">Filip Sovadina</span>
+          <span>Podroužkova 1676/61, 70800 Ostrava - Poruba</span>
+          <span className="font-semibold">IČ: 21154686</span>
+          <span className="text-sm">
+            Fyzická osoba zapsaná v Živnostenském rejstříku v Ostravě od
+            22.1.2024
+          </span>
+        </div>
       </div>
     </main>
   )
