@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './components/Navbar'
-import { Discord } from './components/Discord'
 import { FiArrowUpRight } from 'react-icons/fi'
-import { BsDiscord, BsSpotify, BsFillTelephoneFill } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import Contact from './components/Contact'
-export default function Page() {
+export default async function Page() {
   return (
     <main className="min-h-screen">
       <div className="mx-auto max-w-screen-md">

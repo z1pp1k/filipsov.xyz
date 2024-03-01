@@ -1,21 +1,16 @@
 'use client'
-import React, { useState } from 'react'
-import { useFormspark } from '@formspark/use-formspark'
 
-const FORMSPARK_FORM_ID = 'bgAAKNuFz'
+import React, { useState } from 'react'
+import { sendDiscordMessage } from '../_actions/discord'
 
 function Contact() {
-  const [submit, submitting] = useFormspark({
-    formId: FORMSPARK_FORM_ID,
-  })
-
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
   const onSubmit = async (e: any) => {
     e.preventDefault()
-    await submit({ message, name, email })
+    sendDiscordMessage(name + '\n' + email + '\n' + message)
     alert('Zpráva odeslána!')
   }
 
@@ -59,7 +54,6 @@ function Contact() {
           className="bg-zinc-400 py-4 text-white transition-all duration-300 ease-out hover:cursor-pointer hover:bg-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-900"
           type="submit"
           value="Odeslat"
-          disabled={submitting}
         >
           Odeslat
         </button>
