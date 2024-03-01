@@ -12,6 +12,9 @@ function Contact() {
     e.preventDefault()
     sendDiscordMessage(name + '\n' + email + '\n' + message)
     alert('Zpráva odeslána!')
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
   return (
