@@ -19,7 +19,7 @@ function Contact() {
 
   return (
     <div>
-      <form className="my-10 flex flex-col" onSubmit={onSubmit}>
+      <form className="flex flex-col" onSubmit={onSubmit}>
         <label className="text-lg text-black dark:text-white">
           Jméno a Příjmení
         </label>

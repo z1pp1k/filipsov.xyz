@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Links from '../components/Links'
 import { Metadata } from 'next'
@@ -24,14 +23,16 @@ export default function Page() {
         </header>
         <Links></Links>
 
-        <div className="text-md flex flex-col gap-1 px-6 text-center font-light text-zinc-800 dark:text-zinc-200">
-          <span className="font-semibold">Filip Sovadina</span>
-          <span>Podroužkova 1676/61, 70800 Ostrava - Poruba</span>
-          <span className="font-semibold">IČ: 21154686</span>
-          <span className="text-sm">
-            Fyzická osoba zapsaná v Živnostenském rejstříku v Ostravě od
-            22.1.2024
-          </span>
+        <div className="px-6">
+          <div className="text-md dark:bg-dark-900 mb-10 flex flex-col gap-1 rounded-lg bg-zinc-100 p-4 text-center font-light text-zinc-800 shadow-md sm:p-8 dark:text-zinc-200">
+            <span className="font-semibold">Filip Sovadina</span>
+            <span>Podroužkova 1676/61, 70800 Ostrava - Poruba</span>
+            <span className="font-semibold">IČ: 21154686</span>
+            <span className="text-sm">
+              Fyzická osoba zapsaná v Živnostenském rejstříku v Ostravě od
+              22.1.2024
+            </span>
+          </div>
         </div>
       </div>
     </main>

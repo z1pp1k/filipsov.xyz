@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FiArrowUpRight } from 'react-icons/fi'
 import { BsSpotify, BsGithub, BsMailbox } from 'react-icons/bs'
 import LinkItem from './LinkItem'
 
