@@ -22,7 +22,7 @@ const SOCIALS = [
 
 export default function Links() {
   return (
-    <div className="my-10 flex flex-col gap-3 px-6 text-zinc-500 hover:text-zinc-300 hover:dark:text-zinc-700">
+    <div className="my-20 flex flex-col gap-3 px-6 text-zinc-500 hover:text-zinc-300 hover:dark:text-zinc-700">
       {SOCIALS.map((t, i) => (
         <LinkItem icon={t.icon} name={t.name} href={t.href} key={i} />
       ))}

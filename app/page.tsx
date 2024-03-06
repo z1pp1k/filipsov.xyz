@@ -9,7 +9,7 @@ export default async function Page() {
     <main className="min-h-screen">
       <div className="mx-auto max-w-screen-md">
         <Navbar></Navbar>
-        <header className="mt-12 px-6">
+        <header className="mt-12 px-6 pb-20">
           <h1 className="mb-1 text-4xl font-bold text-black dark:text-white">
             Filip Sovadina
           </h1>
@@ -73,7 +73,7 @@ export default async function Page() {
             </Link>
           </div>
 
-          <div className="my-20 rounded-lg bg-zinc-100 p-4 shadow-md sm:p-8 dark:bg-zinc-900">
+          <div className="mt-20 rounded-lg bg-zinc-100 p-4 shadow-md sm:p-8 dark:bg-zinc-900">
             <h1 className="mb-1 text-4xl font-bold text-black dark:text-white">
               Máte zájem o mé služby?
             </h1>

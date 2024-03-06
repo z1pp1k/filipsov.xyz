@@ -23,8 +23,8 @@ export default function Page() {
         </header>
         <Links></Links>
 
-        <div className="px-6">
-          <div className="text-md dark:bg-dark-900 mb-10 flex flex-col gap-1 rounded-lg bg-zinc-100 p-4 text-center font-light text-zinc-800 shadow-md sm:p-8 dark:text-zinc-200">
+        <div className="px-6 pb-20">
+          <div className="text-md flex flex-col gap-1 rounded-lg bg-zinc-100 p-4 text-center font-light text-black shadow-md sm:p-8 dark:bg-zinc-900 dark:text-white">
             <span className="font-semibold">Filip Sovadina</span>
             <span>Podroužkova 1676/61, 70800 Ostrava - Poruba</span>
             <span className="font-semibold">IČ: 21154686</span>
