@@ -4,11 +4,6 @@ import LinkItem from './LinkItem'
 
 const SOCIALS = [
   {
-    icon: <BsSpotify size={30}></BsSpotify>,
-    href: 'https://open.spotify.com/user/61zeezoyp5p2tojwp3oftskgq?si=7c63d97f21954ed9',
-    name: 'Spotify',
-  },
-  {
     icon: <BsGithub size={30}></BsGithub>,
     href: 'https://github.com/z1pp1k',
     name: 'GitHub',
